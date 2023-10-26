@@ -12,18 +12,18 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 ## Import
 
-To import package ***hexadeca**** use `import` code like the follownig:
+To import package **hexadeca** use `import` code like the follownig:
 ```
 import "sourcecode.social/reiver/go-hexadeca"
 ```
 
 ## Installation
 
-To install package ****hexadeca**** do the following:
+To install package **hexadeca** do the following:
 ```
 GOPROXY=direct https://sourcecode.social/reiver/go-hexadeca
 ```
 
 ## Author
 
-Package ****hexadeca**** was written by [Charles Iliya Krempeaux](http://changelog.ca)
+Package **hexadeca** was written by [Charles Iliya Krempeaux](http://changelog.ca)
