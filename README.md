@@ -12,14 +12,14 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 ## Import
 
-To import package **ord** use `import` code like the follownig:
+To import package ***hexadeca**** use `import` code like the follownig:
 ```
 import "sourcecode.social/reiver/go-hexadeca"
 ```
 
 ## Installation
 
-To install package **ord** do the following:
+To install package ****hexadeca**** do the following:
 ```
 GOPROXY=direct https://sourcecode.social/reiver/go-hexadeca
 ```
