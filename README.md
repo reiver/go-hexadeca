@@ -87,17 +87,20 @@ mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(va
 Or:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import (
+	"sourceccode.social/reiver/go-hexadeca"
+	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+)
 
 // ...
 
 // value==254 -> mostSignificant=='f', leastSignificant=='e'
-mostSignificant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolLowerCase)
+mostSignificant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.LowerCase)
 
 // ...
 
 // value==254 -> mostSignificant=='F', leastSignificant=='E'
-mostSignificant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolUpperCase)
+mostSignificant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `uint16`
@@ -120,15 +123,18 @@ r3, r2, r1, r0 := hexadeca.EncodeUint16UsingUpperCaseSymbols(value)
 Or:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import (
+	"sourceccode.social/reiver/go-hexadeca"
+	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+)
 
 // ...
 
-r3, r2, r1, r0 := hexadeca.EncodeUint16(value, hexadeca.SymbolLowerCase)
+r3, r2, r1, r0 := hexadeca.EncodeUint16(value, runesymbols.LowerCase)
 
 // ...
 
-r3, r2, r1, r0 := hexadeca.EncodeUint16(value, hexadeca.SymbolUpperCase)
+r3, r2, r1, r0 := hexadeca.EncodeUint16(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `uint32`
@@ -151,15 +157,18 @@ r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32UsingUpperCaseSymbols(val
 Or:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import  (
+	"sourceccode.social/reiver/go-hexadeca"
+	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+)
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, hexadeca.SymbolLowerCase)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, runesymbols.LowerCase)
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, hexadeca.SymbolUpperCase)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `uint64`
@@ -184,17 +193,20 @@ r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.Enco
 Or:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import (
+	"sourceccode.social/reiver/go-hexadeca"
+	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+)
 
 // ...
 
 // value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
-r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64(value, hexadeca.SymbolLowerCase)
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64(value, runesymbols.LowerCase)
 
 // ...
 
 // value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
-r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64(value, hexadeca.SymbolUpperCase)
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `int64`
@@ -219,17 +231,20 @@ r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.Enco
 Or:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import (
+	"sourceccode.social/reiver/go-hexadeca"
+	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+)
 
 // ...
 
 // value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
-r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64(value, hexadeca.SymbolLowerCase)
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64(value, runesymbols.LowerCase)
 
 // ...
 
 // value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
-r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64(value, hexadeca.SymbolUpperCase)
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64(value, runesymbols.UpperCase)
 ```
 
 ## Import
