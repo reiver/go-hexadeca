@@ -28,7 +28,7 @@ mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(va
 
 ## Import
 
-To import package **hexadeca** use `import` code like the follownig:
+To import package **hexadeca** use `import` code like the following:
 ```
 import "sourcecode.social/reiver/go-hexadeca"
 ```
