@@ -12,6 +12,8 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 ## Example
 
+A couple examples of encoding a `byte` to hexidecimal.
+
 ```go
 import "sourceccode.social/reiver/go-hexadeca"
 
@@ -24,6 +26,22 @@ mostSignificant, leastSignificant := hexadeca.EncodeByteUsingLowerCaseSymbols(va
 
 // value==254 -> mostSignificant=='F', leastSignificant=='E'
 mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(value)
+```
+
+A couple examples of encoding a `uint64` to hexidecimal.
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+// value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r11, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint64UsingLowerCaseSymbols(value)
+
+// ...
+
+// value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r11, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint64UsingLUpperCaseSymbols(value)
 ```
 
 ## Import
