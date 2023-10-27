@@ -26,22 +26,24 @@ For example —
 
 `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'a'`, `'b'`, `'c'`, `'d'`, `'e'`, `'f'`.
 
-For example:  
+Sample:  
 `c0de`
 
 ### Upper-Case Symbols
 
 `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'A'`, `'B'`, `'C'`, `'D'`, `'E'`, `'F'`.
 
-For example:  
+Sample:  
 `C0DE`
 
 ### Persian Symbols
 
 `'۰'` [zero], `'۱'` [one], `'۲'` [two], `'۳'` [three], `'۴'` [four], `'۵'` [five], `'۶'` [six], `'۷'` [seven], `'۸'` [eight], `'۹'` [nine], `'ی'` (ye) [ten], `'ک'` (kāf) [eleven], `'ل'` (lâm) [twelve], `'م'` (mim) [thirteen], `'ن'` (nun) [fourteen], `'س'`  (sin) [fifteen]
 
-For example:  
+Sample:  
 `ل۰من`
+
+### Custom Symbols
 
 As well as defining you own using function:
 ```go
@@ -76,6 +78,9 @@ func CustomSymbol(value byte) rune {
 
 r1, r0 := hexadeca.EncodeRune(value, CustomSymbol)
 ```
+
+Sample:  
+`𝍬𝍠𝍭𝍮`
 
 ## hexadecimal encode `byte`
 
