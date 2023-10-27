@@ -70,7 +70,7 @@ r1, r0 := hexadeca.EncodeRune(value, CustomSymbol)
 To hexadecimal encode a `byte` use any of these:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca"
 
 // ...
 
@@ -88,8 +88,8 @@ Or:
 
 ```go
 import (
-	"sourceccode.social/reiver/go-hexadeca"
-	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
@@ -108,7 +108,7 @@ mostSignificant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.Uppe
 To hexadecimal encode a `uint16` use any of these:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca"
 
 // ...
 
@@ -124,8 +124,8 @@ Or:
 
 ```go
 import (
-	"sourceccode.social/reiver/go-hexadeca"
-	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
@@ -142,7 +142,7 @@ r3, r2, r1, r0 := hexadeca.EncodeUint16(value, runesymbols.UpperCase)
 To hexadecimal encode a `uint32` use any of these:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca"
 
 // ...
 
@@ -158,8 +158,8 @@ Or:
 
 ```go
 import  (
-	"sourceccode.social/reiver/go-hexadeca"
-	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
@@ -176,7 +176,7 @@ r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, runesymbols.Upper
 To hexadecimal encode a `uint64` use any of these:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca"
 
 // ...
 
@@ -194,8 +194,8 @@ Or:
 
 ```go
 import (
-	"sourceccode.social/reiver/go-hexadeca"
-	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
@@ -214,7 +214,7 @@ r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.Enco
 To hexadecimal encode a `int64` use any of these:
 
 ```go
-import "sourceccode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca"
 
 // ...
 
@@ -232,8 +232,8 @@ Or:
 
 ```go
 import (
-	"sourceccode.social/reiver/go-hexadeca"
-	"sourceccode.social/reiver/go-hexadeca/symbols/rune"
+	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
