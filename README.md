@@ -65,7 +65,7 @@ func CustomSymbol(value byte) rune {
 r1, r0 := hexadeca.EncodeRune(value, CustomSymbol)
 ```
 
-## `byte`
+## hexadecimal encode `byte`
 
 To hexadecimal encode a `byte` use any of these:
 
@@ -100,7 +100,7 @@ mostSignificant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolL
 mostSignificant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolUpperCase)
 ```
 
-## `uint16`
+## hexadecimal encode `uint16`
 
 To hexadecimal encode a `uint16` use any of these:
 
@@ -131,27 +131,40 @@ r3, r2, r1, r0 := hexadeca.EncodeUint16(value, hexadeca.SymbolLowerCase)
 r3, r2, r1, r0 := hexadeca.EncodeUint16(value, hexadeca.SymbolUpperCase)
 ```
 
+## hexadecimal encode `uint32`
 
-## Example
-
-
-
-A couple examples of encoding a `uint32` to hexidecimal.
+To hexadecimal encode a `uint32` use any of these:
 
 ```go
 import "sourceccode.social/reiver/go-hexadeca"
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint32UsingLowerCaseSymbols(value)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32UsingLowerCaseSymbols(value)
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint32UsingLUpperCaseSymbols(value)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32UsingUpperCaseSymbols(value)
+
 ```
 
+Or:
 
-A couple examples of encoding a `uint64` to hexidecimal.
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, hexadeca.SymbolLowerCase)
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, hexadeca.SymbolUpperCase)
+```
+
+## hexadecimal encode `uint64`
+
+To hexadecimal encode a `uint64` use any of these:
 
 ```go
 import "sourceccode.social/reiver/go-hexadeca"
@@ -159,12 +172,64 @@ import "sourceccode.social/reiver/go-hexadeca"
 // ...
 
 // value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
-r15, r14, r13, r12, r11, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint64UsingLowerCaseSymbols(value)
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64UsingLowerCaseSymbols(value)
 
 // ...
 
 // value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
-r15, r14, r13, r12, r11, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint64UsingLUpperCaseSymbols(value)
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64UsingUpperCaseSymbols(value)
+
+```
+
+Or:
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+// value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64(value, hexadeca.SymbolLowerCase)
+
+// ...
+
+// value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint64(value, hexadeca.SymbolUpperCase)
+```
+
+## hexadecimal encode `int64`
+
+To hexadecimal encode a `int64` use any of these:
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+// value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64UsingLowerCaseSymbols(value)
+
+// ...
+
+// value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64UsingUpperCaseSymbols(value)
+
+```
+
+Or:
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+// value==18364758544493064720 -> r15=='f', r14=='e', r13=='d', r12=='c', r11=='b', r10=='a', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64(value, hexadeca.SymbolLowerCase)
+
+// ...
+
+// value==18364758544493064720 -> r15=='F', r14=='E', r13=='D', r12=='C', r11=='B', r10=='A', r9=='9', r8=='8', r7=='7', r6=='6', r5=='5', r4=='4', r3=='3', r2=='2', r1=='1', r0=='0'
+r15, r14, r13, r12, r10, r9, r8, r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeInt64(value, hexadeca.SymbolUpperCase)
 ```
 
 ## Import
