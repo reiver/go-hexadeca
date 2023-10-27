@@ -6,7 +6,7 @@ import (
 	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
-func TestPersian(t *testing.T) {
+func TestUpperCase(t *testing.T) {
 
 	tests := []struct{
 		Value byte
@@ -14,73 +14,73 @@ func TestPersian(t *testing.T) {
 	}{
 		{
 			Value:     0,
-			Expected: '۰',
+			Expected: '0',
 		},
 		{
 			Value:     1,
-			Expected: '۱',
+			Expected: '1',
 		},
 		{
 			Value:     2,
-			Expected: '۲',
+			Expected: '2',
 		},
 		{
 			Value:     3,
-			Expected: '۳',
+			Expected: '3',
 		},
 		{
 			Value:     4,
-			Expected: '۴',
+			Expected: '4',
 		},
 		{
 			Value:     5,
-			Expected: '۵',
+			Expected: '5',
 		},
 		{
 			Value:     6,
-			Expected: '۶',
+			Expected: '6',
 		},
 		{
 			Value:     7,
-			Expected: '۷',
+			Expected: '7',
 		},
 		{
 			Value:     8,
-			Expected: '۸',
+			Expected: '8',
 		},
 		{
 			Value:     9,
-			Expected: '۹',
+			Expected: '9',
 		},
 		{
 			Value:    10,
-			Expected: 'ا',
+			Expected: 'A',
 		},
 		{
 			Value:    11,
-			Expected: 'ب',
+			Expected: 'B',
 		},
 		{
 			Value:    12,
-			Expected: 'پ',
+			Expected: 'C',
 		},
 		{
 			Value:    13,
-			Expected: 'ت',
+			Expected: 'D',
 		},
 		{
 			Value:    14,
-			Expected: 'ث',
+			Expected: 'E',
 		},
 		{
 			Value:    15,
-			Expected: 'ج',
+			Expected: 'F',
 		},
 	}
 
 	for testNumber, test := range tests {
 
-		actual := runesymbols.Persian(test.Value)
+		actual := runesymbols.UpperCase(test.Value)
 		expected := test.Expected
 
 		if expected != actual {
