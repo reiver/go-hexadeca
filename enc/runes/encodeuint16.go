@@ -1,13 +1,12 @@
-package hexadeca
+package hexadecarunes
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/enc/runes"
 	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 func EncodeUint16(value uint16, symbolFunc func(byte)rune) (r3 rune, r2 rune, r1 rune, r0 rune) {
-	r3,  r2  = hexadecarunes.EncodeByte(byte(0x00ff & (value >> (8    ))), symbolFunc)
-	r1,  r0  = hexadecarunes.EncodeByte(byte(0x00ff &  value            ), symbolFunc)
+	r3,  r2  = EncodeByte(byte(0x00ff & (value >> (8    ))), symbolFunc)
+	r1,  r0  = EncodeByte(byte(0x00ff &  value            ), symbolFunc)
 
 	return
 }

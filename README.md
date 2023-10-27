@@ -144,15 +144,30 @@ mostSignificant, leastSignificant := hexadecarunes.EncodeByte(value, runesymbols
 To hexadecimal encode a `uint16` use any of these:
 
 ```go
-import "sourcecode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca/enc/bytes"
 
 // ...
 
-r3, r2, r1, r0 := hexadeca.EncodeUint16UsingLowerCaseSymbols(value)
+r3, r2, r1, r0 := hexadecabytes.EncodeUint16UsingLowerCaseSymbols(value)
 
 // ...
 
-r3, r2, r1, r0 := hexadeca.EncodeUint16UsingUpperCaseSymbols(value)
+r3, r2, r1, r0 := hexadecabytes.EncodeUint16UsingUpperCaseSymbols(value)
+
+```
+
+Or:
+
+```go
+import "sourcecode.social/reiver/go-hexadeca/enc/runes"
+
+// ...
+
+r3, r2, r1, r0 := hexadecarunes.EncodeUint16UsingLowerCaseSymbols(value)
+
+// ...
+
+r3, r2, r1, r0 := hexadecarunes.EncodeUint16UsingUpperCaseSymbols(value)
 
 ```
 
@@ -160,17 +175,34 @@ Or:
 
 ```go
 import (
-	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/enc/bytes"
+	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+)
+
+// ...
+
+r3, r2, r1, r0 := hexadecabytes.EncodeUint16(value, bytesymbols.LowerCase)
+
+// ...
+
+r3, r2, r1, r0 := hexadecabytes.EncodeUint16(value, bytesymbols.UpperCase)
+```
+
+Or:
+
+```go
+import (
+	"sourcecode.social/reiver/go-hexadeca/enc/bytes"
 	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
 
-r3, r2, r1, r0 := hexadeca.EncodeUint16(value, runesymbols.LowerCase)
+r3, r2, r1, r0 := hexadecabytes.EncodeUint16(value, runesymbols.LowerCase)
 
 // ...
 
-r3, r2, r1, r0 := hexadeca.EncodeUint16(value, runesymbols.UpperCase)
+r3, r2, r1, r0 := hexadecabytes.EncodeUint16(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `uint32`
