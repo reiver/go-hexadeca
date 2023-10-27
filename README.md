@@ -65,9 +65,9 @@ func CustomSymbol(value byte) rune {
 r1, r0 := hexadeca.EncodeRune(value, CustomSymbol)
 ```
 
-## Example
+## `byte`
 
-A couple examples of encoding a `byte` to hexidecimal.
+To hexadecimal encode a `byte` use any of these:
 
 ```go
 import "sourceccode.social/reiver/go-hexadeca"
@@ -81,21 +81,59 @@ mostSignificant, leastSignificant := hexadeca.EncodeByteUsingLowerCaseSymbols(va
 
 // value==254 -> mostSignificant=='F', leastSignificant=='E'
 mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(value)
+
 ```
 
-A couple examples of encoding a `uint16` to hexidecimal.
+Or:
 
 ```go
 import "sourceccode.social/reiver/go-hexadeca"
 
 // ...
 
-r3, r2, r1, r0 = hexadeca.EncodeUint16UsingLowerCaseSymbols(value)
+// value==254 -> mostSignificant=='f', leastSignificant=='e'
+mostSignificant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolLowerCase)
 
 // ...
 
-r3, r2, r1, r0 = hexadeca.EncodeUint16UsingLUpperCaseSymbols(value)
+// value==254 -> mostSignificant=='F', leastSignificant=='E'
+mostSignificant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolUpperCase)
 ```
+
+## `uint16`
+
+To hexadecimal encode a `uint16` use any of these:
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+r3, r2, r1, r0 := hexadeca.EncodeUint16UsingLowerCaseSymbols(value)
+
+// ...
+
+r3, r2, r1, r0 := hexadeca.EncodeUint16UsingUpperCaseSymbols(value)
+
+```
+
+Or:
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+r3, r2, r1, r0 := hexadeca.EncodeUint16(value, hexadeca.SymbolLowerCase)
+
+// ...
+
+r3, r2, r1, r0 := hexadeca.EncodeUint16(value, hexadeca.SymbolUpperCase)
+```
+
+
+## Example
+
 
 
 A couple examples of encoding a `uint32` to hexidecimal.
