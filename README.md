@@ -10,6 +10,22 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 [![GoDoc](https://godoc.org/sourcecode.social/reiver/go-hexadeca?status.svg)](https://godoc.org/sourcecode.social/reiver/go-hexadeca)
 
+## Example
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+// value==254 -> mostSignificant=='f', leastSignificant=='e'
+mostSignificant, leastSignificant := hexadeca.EncodeByteUsingLowerCaseSymbols(value)
+
+// ...
+
+// value==254 -> mostSignificant=='F', leastSignificant=='E'
+mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(value)
+```
+
 ## Import
 
 To import package **hexadeca** use `import` code like the follownig:
