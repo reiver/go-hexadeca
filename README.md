@@ -243,7 +243,7 @@ import "sourcecode.social/reiver/go-hexadeca"
 
 To install package **hexadeca** do the following:
 ```
-GOPROXY=direct https://sourcecode.social/reiver/go-hexadeca
+GOPROXY=direct go get https://sourcecode.social/reiver/go-hexadeca
 ```
 
 ## Author
