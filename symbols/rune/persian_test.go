@@ -54,27 +54,27 @@ func TestPersian(t *testing.T) {
 		},
 		{
 			Value:    10,
-			Expected: 'ا',
+			Expected: 'ی',
 		},
 		{
 			Value:    11,
-			Expected: 'ب',
+			Expected: 'ک',
 		},
 		{
 			Value:    12,
-			Expected: 'پ',
+			Expected: 'ل',
 		},
 		{
 			Value:    13,
-			Expected: 'ت',
+			Expected: 'م',
 		},
 		{
 			Value:    14,
-			Expected: 'ث',
+			Expected: 'ن',
 		},
 		{
 			Value:    15,
-			Expected: 'ج',
+			Expected: 'س',
 		},
 	}
 
