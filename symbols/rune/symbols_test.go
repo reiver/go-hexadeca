@@ -1,12 +1,12 @@
-package hexadeca_test
+package runesymbols_test
 
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
-func TestSymbolLowerCase(t *testing.T) {
+func TestLowerCase(t *testing.T) {
 
 	tests := []struct{
 		Value byte
@@ -80,7 +80,7 @@ func TestSymbolLowerCase(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actual := hexadeca.SymbolLowerCase(test.Value)
+		actual := runesymbols.LowerCase(test.Value)
 		expected := test.Expected
 
 		if expected != actual {
@@ -94,7 +94,7 @@ func TestSymbolLowerCase(t *testing.T) {
 	}
 }
 
-func TestSymbolPersian(t *testing.T) {
+func TestPersian(t *testing.T) {
 
 	tests := []struct{
 		Value byte
@@ -168,7 +168,7 @@ func TestSymbolPersian(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actual := hexadeca.SymbolPersian(test.Value)
+		actual := runesymbols.Persian(test.Value)
 		expected := test.Expected
 
 		if expected != actual {
@@ -182,7 +182,7 @@ func TestSymbolPersian(t *testing.T) {
 	}
 }
 
-func TestSymbolUpperCase(t *testing.T) {
+func TestUpperCase(t *testing.T) {
 
 	tests := []struct{
 		Value byte
@@ -256,7 +256,7 @@ func TestSymbolUpperCase(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actual := hexadeca.SymbolUpperCase(test.Value)
+		actual := runesymbols.UpperCase(test.Value)
 		expected := test.Expected
 
 		if expected != actual {

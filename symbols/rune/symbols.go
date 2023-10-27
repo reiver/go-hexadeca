@@ -1,34 +1,34 @@
-package hexadeca
+package runesymbols
 
 import (
 	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
 )
 
-// SymbolLowerCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using lower-case symbols from ASCII / Unicode UTF-8.
+// LowerCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using lower-case symbols from ASCII / Unicode UTF-8.
 // I.e.,
 //
 // '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'
 //
 // Example usage:
 //
-//	mostSignificiant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolLowerCase)
+//	mostSignificiant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.LowerCase)
 //
 // If ‘value’ was 254 (== 0xFE) then ‘mostSignificiant’ would be 'f' and and ‘leastSignificant’ would be 'e'.
-func SymbolLowerCase(value byte) rune {
+func LowerCase(value byte) rune {
 	return rune(bytesymbols.LowerCase(value))
 }
 
-// SymbolPersian is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using Persian symbols from Unicode UTF-8.
+// Persian is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using Persian symbols from Unicode UTF-8.
 // I.e.,
 //
 // '۰' (zero), '۱' (one), '۲' (two), '۳' (three), '۴' (four), '۵' (five), '۶' (six), '۷' (seven), '۸' (eight) ,'۹' (nine), 'ا' (alef), 'ب ' (be), 'پ ' (pe), 'ت ' (te), 'ث ' (s̱e), 'ج' (jim)
 //
 // Example usage:
 //
-//	mostSignificiant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolPersian)
+//	mostSignificiant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.Persian)
 //
 // If ‘value’ was 90 (== 0x5A) then ‘mostSignificiant’ would be '۵' and and ‘leastSignificant’ would be '\u0627'.
-func SymbolPersian(value byte) rune {
+func Persian(value byte) rune {
 	var table [16]rune = [16]rune{
 		'\u06F0', // ۰ (zero)
 		'\u06F1', // ۱ (one)
@@ -55,16 +55,16 @@ func SymbolPersian(value byte) rune {
 	return result
 }
 
-// SymbolUpperCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using upper-case symbols from ASCII / Unicode UTF-8.
+// UpperCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using upper-case symbols from ASCII / Unicode UTF-8.
 // I.e.,
 //
 // '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'
 //
 // Example usage:
 //
-//	mostSignificiant, leastSignificant := hexadeca.EncodeByte(value, hexadeca.SymbolUpperCase)
+//	mostSignificiant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.UpperCase)
 //
 // If ‘value’ was 254 (== 0xFE) then ‘mostSignificiant’ would be 'F' and and ‘leastSignificant’ would be 'E'.
-func SymbolUpperCase(value byte) rune {
+func UpperCase(value byte) rune {
 	return rune(bytesymbols.UpperCase(value))
 }
