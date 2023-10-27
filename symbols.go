@@ -11,14 +11,19 @@ package hexadeca
 //
 // If ‘value’ was 254 (== 0xFE) then ‘mostSignificiant’ would be 'f' and and ‘leastSignificant’ would be 'e'.
 func SymbolLowerCase(value byte) rune {
+	return rune(symbolLowerCase(value))
+}
+
+func symbolLowerCase(value byte) byte {
 	const table string = "0123456789abcdef"
 
 	var index int = int(value) % len(table)
 
-	var result rune = rune(table[index])
+	var result byte = table[index]
 
 	return result
 }
+
 
 // SymbolPersian is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using Persian symbols from Unicode UTF-8.
 // I.e.,
@@ -68,11 +73,15 @@ func SymbolPersian(value byte) rune {
 //
 // If ‘value’ was 254 (== 0xFE) then ‘mostSignificiant’ would be 'F' and and ‘leastSignificant’ would be 'E'.
 func SymbolUpperCase(value byte) rune {
+	return rune(symbolUpperCase(value))
+}
+
+func symbolUpperCase(value byte) byte {
 	const table string = "0123456789ABCDEF"
 
 	var index int = int(value) % len(table)
 
-	var result rune = rune(table[index])
+	var result byte = table[index]
 
 	return result
 }
