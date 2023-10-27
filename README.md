@@ -70,17 +70,34 @@ r1, r0 := hexadeca.EncodeRune(value, CustomSymbol)
 To hexadecimal encode a `byte` use any of these:
 
 ```go
-import "sourcecode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca/enc/bytes"
 
 // ...
 
 // value==254 -> mostSignificant=='f', leastSignificant=='e'
-mostSignificant, leastSignificant := hexadeca.EncodeByteUsingLowerCaseSymbols(value)
+mostSignificant, leastSignificant := hexadecabytes.EncodeByteUsingLowerCaseSymbols(value)
 
 // ...
 
 // value==254 -> mostSignificant=='F', leastSignificant=='E'
-mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(value)
+mostSignificant, leastSignificant := hexadecabytes.EncodeByteUsingUpperCaseSymbols(value)
+
+```
+
+Or:
+
+```go
+import "sourcecode.social/reiver/go-hexadeca/enc/runes"
+
+// ...
+
+// value==254 -> mostSignificant=='f', leastSignificant=='e'
+mostSignificant, leastSignificant := hexadecarunes.EncodeByteUsingLowerCaseSymbols(value)
+
+// ...
+
+// value==254 -> mostSignificant=='F', leastSignificant=='E'
+mostSignificant, leastSignificant := hexadecarunes.EncodeByteUsingUpperCaseSymbols(value)
 
 ```
 
@@ -88,19 +105,38 @@ Or:
 
 ```go
 import (
-	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/enc/bytes"
+	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+)
+
+// ...
+
+// value==254 -> mostSignificant=='f', leastSignificant=='e'
+mostSignificant, leastSignificant := hexadecabytes.EncodeByte(value, bytesymbols.LowerCase)
+
+// ...
+
+// value==254 -> mostSignificant=='F', leastSignificant=='E'
+mostSignificant, leastSignificant := hexadecabytes.EncodeByte(value, bytesymbols.UpperCase)
+```
+
+Or:
+
+```go
+import (
+	"sourcecode.social/reiver/go-hexadeca/enc/runes"
 	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
 
 // value==254 -> mostSignificant=='f', leastSignificant=='e'
-mostSignificant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.LowerCase)
+mostSignificant, leastSignificant := hexadecarunes.EncodeByte(value, runesymbols.LowerCase)
 
 // ...
 
 // value==254 -> mostSignificant=='F', leastSignificant=='E'
-mostSignificant, leastSignificant := hexadeca.EncodeByte(value, runesymbols.UpperCase)
+mostSignificant, leastSignificant := hexadecarunes.EncodeByte(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `uint16`

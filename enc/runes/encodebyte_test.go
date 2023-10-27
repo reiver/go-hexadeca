@@ -1,9 +1,9 @@
-package hexadeca_test
+package hexadecarunes_test
 
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/enc/runes"
 )
 
 func TestEncodeByteUsingLowerCaseSymbols(t *testing.T) {
@@ -314,7 +314,7 @@ func TestEncodeByteUsingLowerCaseSymbols(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actualMostSignificant, actualLeastSignificant := hexadeca.EncodeByteUsingLowerCaseSymbols(test.Value)
+		actualMostSignificant, actualLeastSignificant := hexadecarunes.EncodeByteUsingLowerCaseSymbols(test.Value)
 
 		{
 			actual := actualMostSignificant
@@ -652,7 +652,7 @@ func TestEncodeByteUsingUpperCaseSymbols(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actualMostSignificant, actualLeastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(test.Value)
+		actualMostSignificant, actualLeastSignificant := hexadecarunes.EncodeByteUsingUpperCaseSymbols(test.Value)
 
 		{
 			actual := actualMostSignificant

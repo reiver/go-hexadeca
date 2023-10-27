@@ -1,4 +1,4 @@
-package hexadeca
+package hexadecarunes
 
 import (
 	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
