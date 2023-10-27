@@ -28,6 +28,36 @@ mostSignificant, leastSignificant := hexadeca.EncodeByteUsingLowerCaseSymbols(va
 mostSignificant, leastSignificant := hexadeca.EncodeByteUsingUpperCaseSymbols(value)
 ```
 
+A couple examples of encoding a `uint16` to hexidecimal.
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+r3, r2, r1, r0 = hexadeca.EncodeUint16UsingLowerCaseSymbols(value)
+
+// ...
+
+r3, r2, r1, r0 = hexadeca.EncodeUint16UsingLUpperCaseSymbols(value)
+```
+
+
+A couple examples of encoding a `uint32` to hexidecimal.
+
+```go
+import "sourceccode.social/reiver/go-hexadeca"
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint32UsingLowerCaseSymbols(value)
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 = hexadeca.EncodeUint32UsingLUpperCaseSymbols(value)
+```
+
+
 A couple examples of encoding a `uint64` to hexidecimal.
 
 ```go
