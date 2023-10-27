@@ -2,7 +2,7 @@
 # go-hexadeca
 
 Package **hexadeca** implements **hexadecimal** _encoding_ and _decoding_, for the Go programming language.
-This is meant to be a better alternative to Go's built-in "hex" package.
+This is meant to be a better alternative to Go's built-in `"hex"` package.
 
 Package **hexadeca** has functions for hexadecimal encoding and decoding with Go types:
 * `byte` (i.e., `uint8`),
