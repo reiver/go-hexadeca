@@ -22,14 +22,26 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 Package **hexadeca** lets you pick the 16 symbols to hexadecimal encode to and hexadecimal decode from.
 For example —
 
-Lower-Case:  
+### Lower-Case Symbols
+
 `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'a'`, `'b'`, `'c'`, `'d'`, `'e'`, `'f'`.
 
-Upper-Case:  
+For example:  
+`c0de`
+
+### Upper-Case Symbols
+
 `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'A'`, `'B'`, `'C'`, `'D'`, `'E'`, `'F'`.
 
-Persian:  
+For example:  
+`C0DE`
+
+### Persian Symbols
+
 `'۰'` [zero], `'۱'` [one], `'۲'` [two], `'۳'` [three], `'۴'` [four], `'۵'` [five], `'۶'` [six], `'۷'` [seven], `'۸'` [eight], `'۹'` [nine], `'ی'` (ye) [ten], `'ک'` (kāf) [eleven], `'ل'` (lâm) [twelve], `'م'` (mim) [thirteen], `'ن'` (nun) [fourteen], `'س'`  (sin) [fifteen]
+
+For example:  
+`ل۰من`
 
 As well as defining you own using function:
 ```go
