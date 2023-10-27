@@ -6,10 +6,8 @@ func EncodeUint64(value uint64, symbolFunc func(byte)rune) (r15 rune, r14 rune, 
 	r11, r10 = EncodeByte(byte(0x00000000000000ff & (value >> (8 * 5))), symbolFunc)
 	r9,  r8  = EncodeByte(byte(0x00000000000000ff & (value >> (8 * 4))), symbolFunc)
 	r7,  r6  = EncodeByte(byte(0x00000000000000ff & (value >> (8 * 3))), symbolFunc)
-
 	r5,  r4  = EncodeByte(byte(0x00000000000000ff & (value >> (8 * 2))), symbolFunc)
 	r3,  r2  = EncodeByte(byte(0x00000000000000ff & (value >> (8    ))), symbolFunc)
-
 	r1,  r0  = EncodeByte(byte(0x00000000000000ff &  value            ), symbolFunc)
 
 	return
