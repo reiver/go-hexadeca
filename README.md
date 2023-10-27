@@ -4,7 +4,7 @@
 Package **hexadeca** implements hexadecimal encoding and decoding, for the Go programming language.
 This is meant to be a better alternative to Go's built-in "hex" package.
 
-Package **hexadeca** has easy functiosn for encoding and decoding to:
+Package **hexadeca** has easy functions for encoding and decoding to:
 * `byte` (i.e., `uint8`),
 * `uint16`,
 * `uint32`
