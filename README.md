@@ -4,7 +4,14 @@
 Package **hexadeca** implements **hexadecimal** _encoding_ and _decoding_, for the Go programming language.
 This is meant to be a better alternative to Go's built-in `"hex"` package.
 
-Package **hexadeca** has functions for hexadecimal encoding and decoding with Go types:
+Package **hexadeca** does _not_ impose any endianness for hexadecimal encoding.
+The individual symbols are returned separately. For example:
+
+```go
+b3, b2, b1, b0 := hexadeca.EncodeUint16UsingUpperCaseSymbols(u16)
+```
+
+Package **hexadeca** has functions for hexadecimal encoding and decoding for the Go types:
 * `byte` (i.e., `uint8`),
 * `uint16`,
 * `uint32`
