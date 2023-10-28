@@ -2,14 +2,15 @@ package hexadeca
 
 import (
 	"sourcecode.social/reiver/go-hexadeca/bytes"
+	"sourcecode.social/reiver/go-hexadeca/runes"
 )
-
-func EncodeByte(value byte, symbolFunc func(byte)byte) (mostSignificant byte, leastSignificant byte) {
-	return hexadecabytes.EncodeByte(value, symbolFunc)
-}
 
 func EncodeByteUsingLowerCaseSymbols(value byte) (mostSignificant byte, leastSignificant byte) {
 	return hexadecabytes.EncodeByteUsingLowerCaseSymbols(value)
+}
+
+func EncodeByteUsingPersianSymbols(value byte) (mostSignificant rune, leastSignificant rune) {
+	return hexadecarunes.EncodeByteUsingPersianSymbols(value)
 }
 
 func EncodeByteUsingUpperCaseSymbols(value byte) (mostSignificant byte, leastSignificant byte) {
