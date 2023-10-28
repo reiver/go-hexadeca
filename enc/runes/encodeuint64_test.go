@@ -1,9 +1,9 @@
-package hexadeca_test
+package hexadecarunes_test
 
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/enc/runes"
 )
 
 func TestEncodeUint64UsingLowerCaseSymbols(t *testing.T) {
@@ -842,7 +842,7 @@ func TestEncodeUint64UsingLowerCaseSymbols(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actual15,   actual14,   actual13,   actual12,   actual11,   actual10,   actual9,   actual8,   actual7,   actual6,   actual5,   actual4,   actual3,   actual2,   actual1,   actual0 := hexadeca.EncodeUint64UsingLowerCaseSymbols(test.Value)
+		actual15,   actual14,   actual13,   actual12,   actual11,   actual10,   actual9,   actual8,   actual7,   actual6,   actual5,   actual4,   actual3,   actual2,   actual1,   actual0 := hexadecarunes.EncodeUint64UsingLowerCaseSymbols(test.Value)
 		expected15, expected14, expected13, expected12, expected11, expected10, expected9, expected8, expected7, expected6, expected5, expected4, expected3, expected2, expected1, expected0 := test.Expected15, test.Expected14, test.Expected13, test.Expected12, test.Expected11, test.Expected10, test.Expected9, test.Expected8, test.Expected7, test.Expected6, test.Expected5, test.Expected4, test.Expected3, test.Expected2, test.Expected1, test.Expected0
 
 		if expected15 != actual15 ||
@@ -1706,7 +1706,7 @@ func TestEncodeUint64UsingUpperCaseSymbols(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actual15,   actual14,   actual13,   actual12,   actual11,   actual10,   actual9,   actual8,   actual7,   actual6,   actual5,   actual4,   actual3,   actual2,   actual1,   actual0 := hexadeca.EncodeUint64UsingUpperCaseSymbols(test.Value)
+		actual15,   actual14,   actual13,   actual12,   actual11,   actual10,   actual9,   actual8,   actual7,   actual6,   actual5,   actual4,   actual3,   actual2,   actual1,   actual0 := hexadecarunes.EncodeUint64UsingUpperCaseSymbols(test.Value)
 		expected15, expected14, expected13, expected12, expected11, expected10, expected9, expected8, expected7, expected6, expected5, expected4, expected3, expected2, expected1, expected0 := test.Expected15, test.Expected14, test.Expected13, test.Expected12, test.Expected11, test.Expected10, test.Expected9, test.Expected8, test.Expected7, test.Expected6, test.Expected5, test.Expected4, test.Expected3, test.Expected2, test.Expected1, test.Expected0
 
 		if expected15 != actual15 ||
