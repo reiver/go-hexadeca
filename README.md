@@ -54,6 +54,7 @@ For example, one could create a symbol sequence function to make the hexadecimal
 | Name             | zero  | one   | two   | three | four | five   | six   | seven | eight | nine  | ten   | eleven | twelve | thirteen | fourteen | fifteen |
 |------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|--------|----------|----------|---------|
 | _Custom Example_ | `𝍠`   | `𝍡`   | `𝍢`   | `𝍣`   | `𝍤`   | `𝍥`   | `𝍦`   | `𝍧`   | `𝍨`   | `𝍩`   | `𝍪`   | `𝍫`    | `𝍬`    | `𝍭`      | `𝍮`      | `𝍯`     |
+| _Custom Example_ | `❤️`   | `💜`  | `💙`  | `💛`  | `💚`  | `🤍`  | `🖤`  | `🧡`  | `🤎`  | `💕`  | `💔`  | `💖`   | `💗`   | `💓`     | `💞`     | `💝`    |
 
 ... or anything else.
 
