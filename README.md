@@ -26,22 +26,25 @@ For example —
 
 `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'a'`, `'b'`, `'c'`, `'d'`, `'e'`, `'f'`.
 
-Sample:  
-`c0de`
+Samples:  
+* `c0de`
+* `4b1d`
 
 ### Upper-Case Symbols
 
 `'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'A'`, `'B'`, `'C'`, `'D'`, `'E'`, `'F'`.
 
-Sample:  
-`C0DE`
+Samples:  
+* `C0DE`
+* `4b1d`
 
 ### Persian Symbols
 
 `'۰'` [zero], `'۱'` [one], `'۲'` [two], `'۳'` [three], `'۴'` [four], `'۵'` [five], `'۶'` [six], `'۷'` [seven], `'۸'` [eight], `'۹'` [nine], `'ی'` (ye) [ten], `'ک'` (kāf) [eleven], `'ل'` (lâm) [twelve], `'م'` (mim) [thirteen], `'ن'` (nun) [fourteen], `'س'`  (sin) [fifteen]
 
-Sample:  
-`نم۰ل`
+Samples:  
+* `نم۰ل`
+* `م۱ک۴`
 
 ### Custom Symbols
 
