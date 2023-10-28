@@ -39,7 +39,7 @@ Here are some samples of hexadecimal numbers using each of the built-in symbol s
 |------------|----------------|----------------|-------------|
 | Lower-Case | `c0de`         | `4b1d`         | `ff`        |
 | Upper-Case | `C0DE`         | `4B1D`         | `FF`        |
-| Persian    | `نم۰ل`         | `م۱ک۴`         | `س'س'`      |
+| Persian    | `نم۰ل`         | `م۱ک۴`         | `'سس'`      |
 
 ### Custom Symbols
 
