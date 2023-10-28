@@ -41,7 +41,7 @@ Sample:
 `'۰'` [zero], `'۱'` [one], `'۲'` [two], `'۳'` [three], `'۴'` [four], `'۵'` [five], `'۶'` [six], `'۷'` [seven], `'۸'` [eight], `'۹'` [nine], `'ی'` (ye) [ten], `'ک'` (kāf) [eleven], `'ل'` (lâm) [twelve], `'م'` (mim) [thirteen], `'ن'` (nun) [fourteen], `'س'`  (sin) [fifteen]
 
 Sample:  
-`ل۰من`
+`نم۰ل`
 
 ### Custom Symbols
 
