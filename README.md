@@ -21,7 +21,7 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 
 Package **hexadeca** lets you pick the 16 symbols to hexadecimal encode to and hexadecimal decode from.
 
-Package **hexadeca** has built-in support for the following symbols:
+Package **hexadeca** has built-in support for the following symbol sequences:
 
 | Name       | zero  | one   | two   | three | four | five   | six   | seven | eight | nine  | ten   | eleven | twelve | thirteen | fourteen | fifteen |
 |------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|--------|----------|----------|---------|
@@ -29,21 +29,23 @@ Package **hexadeca** has built-in support for the following symbols:
 | Upper-Case | `'0'` | `'1'` | `'2'` | `'3'` | `'4'` | `'5'` | `'6'` | `'7'` | `'8'` | `'9'` | `'A'` | `'B'`  | `'C'`  | `'D'`    | `'E'`    | `'F'`   |
 | Persian    | `'۰'` | `'۱'` | `'۲'` | `'۳'` | `'۴'` | `'۵'` | `'۶'` | `'۷'` | `'۸'` | `'۹'` | `'ی'` | `'ک'`  | `'ل'`  | `'م'`    | `'ن'`    | `'س'`   |
 
-Lower-Case Samples:  
-* `c0de`
-* `4b1d`
+Package **hexadeca** also lets you pick your own symbol sequences, using a function.
 
-Upper-Case Samples:  
-* `C0DE`
-* `4b1d`
+### Samples
 
-Persian Samples:  
-* `نم۰ل`
-* `م۱ک۴`
+Here are some samples of hexadecimal numbers using each of the built-in symbol sequences:
+
+| Name       | Decimal 49,374 | Decimal 19,229 | Decimal 255 |
+|------------|----------------|----------------|-------------|
+| Lower-Case | `c0de`         | `4b1d`         | `ff`        |
+| Upper-Case | `C0DE`         | `4B1D`         | `FF`        |
+| Persian    | `نم۰ل`         | `م۱ک۴`         | `س'س'`      |
 
 ### Custom Symbols
 
-Package **hexadeca** also lets you use your own custom symbols by using your own symbol function:
+Package **hexadeca** also lets you use your own custom symbols by using your own symbol function.
+
+For example:
 ```go
 func CustomSymbol(value byte) rune {
         var table [16]rune = [16]rune{
