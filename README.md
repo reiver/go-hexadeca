@@ -82,8 +82,9 @@ func CustomSymbol(value byte) rune {
 r1, r0 := hexadeca.EncodeRune(value, CustomSymbol)
 ```
 
-Sample:  
-`𝍬𝍠𝍭𝍮`
+Samples:  
+* `𝍬𝍠𝍭𝍮`
+* `𝍤𝍫𝍡𝍭` 
 
 ## hexadecimal encode `byte`
 
