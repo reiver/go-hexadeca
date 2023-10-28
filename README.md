@@ -227,15 +227,30 @@ r3, r2, r1, r0 := hexadecabytes.EncodeUint16(value, runesymbols.UpperCase)
 To hexadecimal encode a `uint32` use any of these:
 
 ```go
-import "sourcecode.social/reiver/go-hexadeca"
+import "sourcecode.social/reiver/go-hexadeca/enc/bytes"
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32UsingLowerCaseSymbols(value)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecabytes.EncodeUint32UsingLowerCaseSymbols(value)
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32UsingUpperCaseSymbols(value)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecabytes.EncodeUint32UsingUpperCaseSymbols(value)
+
+```
+
+Or:
+
+```go
+import "sourcecode.social/reiver/go-hexadeca/enc/runes"
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecarunes.EncodeUint32UsingLowerCaseSymbols(value)
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecarunes.EncodeUint32UsingUpperCaseSymbols(value)
 
 ```
 
@@ -243,17 +258,34 @@ Or:
 
 ```go
 import  (
-	"sourcecode.social/reiver/go-hexadeca"
+	"sourcecode.social/reiver/go-hexadeca/enc/bytes"
+	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+)
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecabytes.EncodeUint32(value, bytesymbols.LowerCase)
+
+// ...
+
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecabytes.EncodeUint32(value, bytesymbols.UpperCase)
+```
+
+Or:
+
+```go
+import  (
+	"sourcecode.social/reiver/go-hexadeca/enc/runes"
 	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
 )
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, runesymbols.LowerCase)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecarunes.EncodeUint32(value, runesymbols.LowerCase)
 
 // ...
 
-r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32(value, runesymbols.UpperCase)
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadecarunes.EncodeUint32(value, runesymbols.UpperCase)
 ```
 
 ## hexadecimal encode `uint64`
