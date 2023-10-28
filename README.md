@@ -20,35 +20,30 @@ Online documentation, which includes examples, can be found at: http://godoc.org
 ## Symbols
 
 Package **hexadeca** lets you pick the 16 symbols to hexadecimal encode to and hexadecimal decode from.
-For example —
 
-### Lower-Case Symbols
+Package **hexadeca** has built-in support for the following symbols:
 
-`'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'a'`, `'b'`, `'c'`, `'d'`, `'e'`, `'f'`.
+| Name       | zero  | one   | two   | three | four | five   | six   | seven | eight | nine  | ten   | eleven | twelve | thirteen | fourteen | fifteen |
+|------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|--------|----------|----------|---------|
+| Lower-Case | `'0'` | `'1'` | `'2'` | `'3'` | `'4'` | `'5'` | `'6'` | `'7'` | `'8'` | `'9'` | `'a'` | `'b'`  | `'c'`  | `'d'`    | `'e'`    | `'f'`   |
+| Upper-Case | `'0'` | `'1'` | `'2'` | `'3'` | `'4'` | `'5'` | `'6'` | `'7'` | `'8'` | `'9'` | `'A'` | `'B'`  | `'C'`  | `'D'`    | `'E'`    | `'F'`   |
+| Persian    | `'۰'` | `'۱'` | `'۲'` | `'۳'` | `'۴'` | `'۵'` | `'۶'` | `'۷'` | `'۸'` | `'۹'` | `'ی'` | `'ک'`  | `'ل'`  | `'م'`    | `'ن'`    | `'س'`   |
 
-Samples:  
+Lower-Case Samples:  
 * `c0de`
 * `4b1d`
 
-### Upper-Case Symbols
-
-`'0'`, `'1'`, `'2'`, `'3'`, `'4'`, `'5'`, `'6'`, `'7'`, `'8'`, `'9'`, `'A'`, `'B'`, `'C'`, `'D'`, `'E'`, `'F'`.
-
-Samples:  
+Upper-Case Samples:  
 * `C0DE`
 * `4b1d`
 
-### Persian Symbols
-
-`'۰'` [zero], `'۱'` [one], `'۲'` [two], `'۳'` [three], `'۴'` [four], `'۵'` [five], `'۶'` [six], `'۷'` [seven], `'۸'` [eight], `'۹'` [nine], `'ی'` (ye) [ten], `'ک'` (kāf) [eleven], `'ل'` (lâm) [twelve], `'م'` (mim) [thirteen], `'ن'` (nun) [fourteen], `'س'`  (sin) [fifteen]
-
-Samples:  
+Persian Samples:  
 * `نم۰ل`
 * `م۱ک۴`
 
 ### Custom Symbols
 
-As well as defining you own using function:
+Package **hexadeca** also lets you use your own custom symbols by using your own symbol function:
 ```go
 func CustomSymbol(value byte) rune {
         var table [16]rune = [16]rune{
