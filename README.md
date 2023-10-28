@@ -24,6 +24,7 @@ Package **hexadeca** has functions for hexadecimal encoding and decoding for the
 * `uint16`,
 * `uint32`
 * `uint64`
+* `int32`
 * `int64`
 
 ## Documention
