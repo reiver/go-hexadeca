@@ -8,7 +8,15 @@ Package **hexadeca** does _not_ impose any endianness for hexadecimal encoding.
 The individual symbols are returned separately. For example:
 
 ```go
-b3, b2, b1, b0 := hexadeca.EncodeUint16UsingUpperCaseSymbols(u16)
+b1, b0 := hexadeca.EncodeByteUsingUpperCaseSymbols(u16)
+```
+
+```go
+b3, b2, b1, b0 := hexadeca.EncodeUint16UsingLowerCaseSymbols(u16)
+```
+
+```go
+r7, r6, r5, r4, r3, r2, r1, r0 := hexadeca.EncodeUint32UsingPersianSymbols(u16)
 ```
 
 Package **hexadeca** has functions for hexadecimal encoding and decoding for the Go types:
