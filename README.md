@@ -1,4 +1,3 @@
-
 # go-hexadeca
 
 Package **hexadeca** implements **hexadecimal** _encoding_ and _decoding_, for the Go programming language.
@@ -31,9 +30,9 @@ Package **hexadeca** has functions for hexadecimal encoding and decoding for the
 
 ## Documention
 
-Online documentation, which includes examples, can be found at: http://godoc.org/sourcecode.social/reiver/go-hexadeca
+Online documentation, which includes examples, can be found at: http://godoc.org/github.com/reiver/go-hexadeca
 
-[![GoDoc](https://godoc.org/sourcecode.social/reiver/go-hexadeca?status.svg)](https://godoc.org/sourcecode.social/reiver/go-hexadeca)
+[![GoDoc](https://godoc.org/github.com/reiver/go-hexadeca?status.svg)](https://godoc.org/github.com/reiver/go-hexadeca)
 
 ## Symbols
 
@@ -114,14 +113,14 @@ Samples:
 
 To import package **hexadeca** use `import` code like the following:
 ```
-import "sourcecode.social/reiver/go-hexadeca"
+import "github.com/reiver/go-hexadeca"
 ```
 
 ## Installation
 
 To install package **hexadeca** do the following:
 ```
-GOPROXY=direct go get https://sourcecode.social/reiver/go-hexadeca
+GOPROXY=direct go get https://github.com/reiver/go-hexadeca
 ```
 
 ## Author

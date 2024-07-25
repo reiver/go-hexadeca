@@ -1,7 +1,7 @@
 package hexadecarunes
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
+	"github.com/reiver/go-hexadeca/symbols/rune"
 )
 
 // EncodeInt8 encodes the value of a int8 into hexadecimal.

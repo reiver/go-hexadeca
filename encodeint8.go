@@ -1,8 +1,8 @@
 package hexadeca
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/bytes"
-	"sourcecode.social/reiver/go-hexadeca/runes"
+	"github.com/reiver/go-hexadeca/bytes"
+	"github.com/reiver/go-hexadeca/runes"
 )
 
 func EncodeInt8UsingLowerCaseSymbols(value int8) (mostSignificant byte, leastSignificant byte) {

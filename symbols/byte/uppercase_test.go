@@ -3,7 +3,7 @@ package bytesymbols_test
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+	"github.com/reiver/go-hexadeca/symbols/byte"
 )
 
 func TestSymbolUpperCase(t *testing.T) {

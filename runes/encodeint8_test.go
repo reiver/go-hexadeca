@@ -3,7 +3,7 @@ package hexadecarunes_test
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca/runes"
+	"github.com/reiver/go-hexadeca/runes"
 )
 
 func TestEncodeInt8UsingLowerCaseSymbols(t *testing.T) {

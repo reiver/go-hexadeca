@@ -1,7 +1,7 @@
 package hexadecabytes
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+	"github.com/reiver/go-hexadeca/symbols/byte"
 )
 
 // EncodeByte encodes the value of a byte into hexadecimal.

@@ -3,7 +3,7 @@ package hexadeca_test
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca"
+	"github.com/reiver/go-hexadeca"
 )
 
 func TestDecodeByte(t *testing.T) {

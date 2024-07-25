@@ -1,7 +1,7 @@
 package hexadecarunes
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
+	"github.com/reiver/go-hexadeca/symbols/rune"
 )
 
 func EncodeInt32(value int32, symbolFunc func(byte)rune) (r7 rune, r6 rune, r5 rune, r4 rune, r3 rune, r2 rune, r1 rune, r0 rune) {

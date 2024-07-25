@@ -3,7 +3,7 @@ package runesymbols_test
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
+	"github.com/reiver/go-hexadeca/symbols/rune"
 )
 
 func TestUpperCase(t *testing.T) {

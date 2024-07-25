@@ -1,7 +1,7 @@
 package hexadecarunes
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/symbols/rune"
+	"github.com/reiver/go-hexadeca/symbols/rune"
 )
 
 // EncodeByte encodes the value of a byte into hexadecimal.

@@ -3,7 +3,7 @@ package hexadecabytes_test
 import (
 	"testing"
 
-	"sourcecode.social/reiver/go-hexadeca/bytes"
+	"github.com/reiver/go-hexadeca/bytes"
 )
 
 func TestEncodeInt64UsingLowerCaseSymbols(t *testing.T) {

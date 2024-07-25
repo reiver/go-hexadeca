@@ -1,7 +1,7 @@
 package hexadecabytes
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+	"github.com/reiver/go-hexadeca/symbols/byte"
 )
 
 func EncodeInt64(value int64, symbolFunc func(byte)byte) (r15 byte, r14 byte, r13 byte, r12 byte, r11 byte, r10 byte, r9 byte, r8 byte, r7 byte, r6 byte, r5 byte, r4 byte, r3 byte, r2 byte, r1 byte, r0 byte) {

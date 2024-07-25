@@ -1,7 +1,7 @@
 package runesymbols
 
 import (
-	"sourcecode.social/reiver/go-hexadeca/symbols/byte"
+	"github.com/reiver/go-hexadeca/symbols/byte"
 )
 
 // LowerCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using lower-case symbols from ASCII / Unicode UTF-8.
