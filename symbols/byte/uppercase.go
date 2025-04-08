@@ -1,5 +1,17 @@
 package bytesymbols
 
+func FromUpperCase(symbol byte) (byte, bool) {
+	switch {
+	case '0' <= symbol && symbol <= '9':
+		return symbol - '0', true
+	case 'A' <= symbol && symbol <= 'F':
+		return symbol - 'A' + 10, true
+	default:
+		var nada byte
+		return nada, false
+	}
+}
+
 // UpperCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using upper-case symbols from ASCII / Unicode UTF-8.
 // I.e.,
 //

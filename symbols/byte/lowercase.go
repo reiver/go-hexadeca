@@ -1,5 +1,17 @@
 package bytesymbols
 
+func FromLowerCase(symbol byte) (byte, bool) {
+	switch {
+	case '0' <= symbol && symbol <= '9':
+		return symbol - '0', true
+	case 'a' <= symbol && symbol <= 'f':
+		return symbol - 'a' + 10, true
+	default:
+		var nada byte
+		return nada, false
+	}
+}
+
 // LowerCase is used with hexadeca.EncodeByte() to encode a byte into hexadecimal symbols using lower-case symbols from ASCII / Unicode UTF-8.
 // I.e.,
 //

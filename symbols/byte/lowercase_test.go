@@ -6,6 +6,135 @@ import (
 	"github.com/reiver/go-hexadeca/symbols/byte"
 )
 
+func TestFromLowerCase(t *testing.T) {
+
+	tests := []struct{
+		Symbol byte
+		ExpectedByte byte
+		ExpectedOK bool
+	}{
+		{
+			Symbol:      '0',
+			ExpectedByte: 0,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '1',
+			ExpectedByte: 1,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '2',
+			ExpectedByte: 2,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '3',
+			ExpectedByte: 3,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '4',
+			ExpectedByte: 4,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '5',
+			ExpectedByte: 5,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '6',
+			ExpectedByte: 6,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '7',
+			ExpectedByte: 7,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '8',
+			ExpectedByte: 8,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      '9',
+			ExpectedByte: 9,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      'a',
+			ExpectedByte: 10,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      'b',
+			ExpectedByte: 11,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      'c',
+			ExpectedByte: 12,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      'd',
+			ExpectedByte: 13,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      'e',
+			ExpectedByte: 14,
+			ExpectedOK : true,
+		},
+		{
+			Symbol:      'f',
+			ExpectedByte: 15,
+			ExpectedOK : true,
+		},
+
+
+
+		{
+			Symbol:      'z',
+			ExpectedByte: 0,
+			ExpectedOK : false,
+		},
+	}
+
+	for testNumber, test := range tests {
+
+		actualByte, actualOK := bytesymbols.FromLowerCase(test.Symbol)
+
+		{
+			expected := test.ExpectedOK
+			actual := actualOK
+
+			if expected != actual {
+				t.Errorf("For test #%d, the actual 'ok' is not what was expected.", testNumber)
+				t.Logf("EXPECTED: %t", expected)
+				t.Logf("ACTUAL:   %t", actual)
+				t.Logf("SYMBOL: %q (%U)", test.Symbol, test.Symbol)
+				continue
+			}
+		}
+
+		{
+			expected := test.ExpectedByte
+			actual := actualByte
+
+			if expected != actual {
+				t.Errorf("For test #%d, the actual 'ok' is not what was expected.", testNumber)
+				t.Logf("EXPECTED: 0x%X", expected)
+				t.Logf("ACTUAL:   0x%X", actual)
+				t.Logf("SYMBOL: %q (%U)", test.Symbol, test.Symbol)
+				continue
+			}
+		}
+	}
+}
+
 func TestSymbolLowerCase(t *testing.T) {
 
 	tests := []struct{
